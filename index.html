@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Drag &amp; Drop Image Gallery</h1>
+    <p class="hint">Drag an image into the big box to view it larger. On a phone you can also tap one.</p>
+
+    <div class="gallery">
+      <div class="thumbs">
+        <img src="images/image1.svg" alt="Sunset" class="thumb" draggable="true">
+        <img src="images/image2.svg" alt="Ocean" class="thumb" draggable="true">
+        <img src="images/image3.svg" alt="Forest" class="thumb" draggable="true">
+        <img src="images/image4.svg" alt="Night sky" class="thumb" draggable="true">
+        <img src="images/image5.svg" alt="City" class="thumb" draggable="true">
+      </div>
+
+      <div class="display" id="display">
+        <p id="placeholder">Drop an image here</p>
+        <img id="largeImage" src="" alt="Selected image" hidden>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
